@@ -1,18 +1,20 @@
 <template>
-  <div>11</div>
+  <div>
+    <div>11</div>
+  </div>
 </template>
 
 <script>
-
 export default {
-  mounted() {
+  data() {
+    return {
+    };
   },
-  props: {
+  components: {
 
   },
 
 };
-
 </script>
 
 <style>
