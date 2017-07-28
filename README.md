@@ -1,6 +1,6 @@
-# ks-ui
+# my-project
 
-> This is a ui component library of vue
+> A Vue.js project
 
 ## Build Setup
 

@@ -1,20 +1,34 @@
 <template>
   <div>
-    <div>11</div>
+
   </div>
 </template>
 
 <script>
+
 export default {
+
   data() {
     return {
-    };
+
+    }
   },
-  components: {
+  computed: {
 
   },
+  components:{
 
-};
+  },
+  mounted() {
+
+
+  },
+  beforeDestroy() {
+
+  },
+  methods: {
+  }
+}
 </script>
 
 <style>

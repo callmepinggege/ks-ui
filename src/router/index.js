@@ -1,15 +1,21 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Main from '@/demo/Main';
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from '@/demo/home'
+import Img from '@/demo/img'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Main,
+      name: 'home',
+      component: Home
     },
-  ],
-});
+    {
+      path: '/img',
+      name: 'img',
+      component: Img
+    }
+  ]
+})
