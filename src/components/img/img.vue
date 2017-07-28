@@ -1,63 +1,56 @@
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.ks-img ul {
-  overflow: hidden;
-  width: 100%;
-}
-
- .ks-img li {
-  list-style: none;
-  width: 100%;
-  height: 300px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  float: left;
-  overflow: hidden;
-  position: relative;
-}
-
-.ks-img li i {
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  position: absolute;
-  border: 2px solid #6feb95;
-  z-index: 0;
-  left: 50%;
-  top: 50%;
-  margin-top: -11px;
-  margin-left: -11px;
-  animation: move 1s infinite;
-  -webkit-animation: move 1s infinite;
-}
-
-.ks-img li i:before {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 4px;
-  content: '';
-  box-shadow: 0 0 10px #666;
-  -webkit-box-shadow: 0 0 10px #666;
-  background: #fff;
-  border: 1px solid #fff;
-  top: -3px;
-  left: 50%;
-  margin-left: -3px;
-}
-
-.ks-img img {
-  vertical-align: middle;
-  border-width: 0;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  height: 300px;
+<style lang='scss' >
+.ks-img {
+  ul {
+    overflow: hidden;
+    width: 100%;
+  }
+  li {
+    list-style: none;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    i {
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      position: absolute;
+      border: 2px solid #6feb95;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      margin-top: -11px;
+      margin-left: -11px;
+      animation: move 1s infinite;
+      -webkit-animation: move 1s infinite;
+    }
+    i:before {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 4px;
+      content: '';
+      box-shadow: 0 0 10px #666;
+      -webkit-box-shadow: 0 0 10px #666;
+      background: #fff;
+      border: 1px solid #fff;
+      top: -3px;
+      left: 50%;
+      margin-left: -3px;
+    }
+  }
+  img {
+    vertical-align: middle;
+    border-width: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+  }
 }
 
 @keyframes move {

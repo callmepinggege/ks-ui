@@ -1,11 +1,11 @@
 <template>
   <div>
-
+    <ks-hearder></ks-hearder>
   </div>
 </template>
 
 <script>
-
+import ksHearder from '@/components/hearder/index.js'
 export default {
 
   data() {
@@ -17,7 +17,7 @@ export default {
 
   },
   components:{
-
+    ksHearder
   },
   mounted() {
 
@@ -31,6 +31,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

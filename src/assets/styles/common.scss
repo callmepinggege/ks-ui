@@ -1,0 +1,165 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+span,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+section,
+nav,
+header,
+footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    text-align: inherit;
+    line-height: inherit;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", \5b8b\4f53, sans-serif;
+    background: #f1f1f1;
+    height: 100%;
+    width: 100%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: #333;
+}
+
+em {
+    text-transform: none;
+    font-style: normal;
+}
+
+textarea {
+    resize: none;
+    -webkit-appearance: none;
+}
+
+input {
+    margin: 0;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    background: none;
+}
+
+input[type="text"] {
+    background: none;
+}
+
+input[placeholder],
+[placeholder],
+*[placeholder] {
+    color: #b3b3b3;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+    display: block;
+}
+
+dd,
+dt,
+li {
+    display: block;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
