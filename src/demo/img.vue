@@ -1,11 +1,13 @@
 <template>
   <div>
+    <ks-hearder isback title="图片懒加载"></ks-hearder>
     <ks-img></ks-img>
   </div>
 </template>
 
 <script>
 import ksImg from '@/components/img/index.js'
+import ksHearder from '@/components/hearder/index.js'
 export default {
 
   data() {
@@ -17,7 +19,7 @@ export default {
 
   },
   components:{
-   ksImg
+   ksImg,ksHearder
   },
   mounted() {
 

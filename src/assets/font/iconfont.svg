@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Fri Jul 28 15:49:45 2017
+Created by FontForge 20120731 at Mon Jul 31 15:50:09 2017
  By admin
 </metadata>
 <defs>
@@ -57,5 +57,7 @@ t-10.5 26t11 26.5v0v0l165 165l-165 165v0v0q-11 11 -11 26t11 26t26 11t26 -11v0l16
     <glyph glyph-name="zhengque" unicode="&#xe65b;" 
 d="M512 896q-138 0 -256 -69t-187 -187t-69 -256t69 -256t187 -187t256 -69t256 69t187 187t69 256t-69 256t-187 187t-256 69zM832 531l-365 -365q-13 -12 -32 -12t-32 12l-6 7q-3 0 -4.5 1.5t-1.5 3.5l-1 1l-198 205q-14 14 -14 32t14 32t32 14t32 -14l179 -179l333 326
 q14 15 32 15t32 -15q14 -9 14 -29t-14 -35z" />
+    <glyph glyph-name="xiangqing" unicode="&#xe63b;" 
+d="M321 53l329 352l-329 352h95l328 -352l-328 -352h-95z" />
   </font>
 </defs></svg>

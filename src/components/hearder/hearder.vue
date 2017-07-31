@@ -1,8 +1,8 @@
 
 <template>
   <div class="hearder">
-    <icon type="fanhui" class="left-icon"></icon>
-    头部
+    <icon type="fanhui" class="left-icon" v-if="isback" @click.native="back"></icon>
+    {{title}}
     <slot name="right-slot"></slot>
   </div>
 </template>
@@ -12,6 +12,15 @@ import ksHearder from '@/components/hearder/index.js'
 import icon from '@/components/icon/index.js'
 export default {
   name: 'hearder',
+   props: {
+    title: {
+      type: String,
+    },
+    isback:{
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
 
@@ -30,7 +39,9 @@ export default {
 
   },
   methods: {
-
+    back(){
+      this.$router.go(-1)
+    }
   }
 }
 
@@ -41,11 +52,12 @@ export default {
   width: 100%;
   font-size: 0.3rem;
   background: #009ad6;
-  padding: 0.25rem 0;
+  padding: 0.20rem 0;
   text-align: center;
   color: #fff;
   position: fixed;
   top: 0;
+  z-index: 100;
   .left-icon {
     position: absolute;
     left: 5%;
