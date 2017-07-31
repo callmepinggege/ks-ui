@@ -3,7 +3,7 @@
   <div class="hearder">
     <icon type="fanhui" class="left-icon"></icon>
     头部
-    <icon type="gengduocaidan" class="right-icon"></icon>
+    <slot name="right-slot"></slot>
   </div>
 </template>
 
