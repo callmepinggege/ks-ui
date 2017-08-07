@@ -83,9 +83,16 @@
 <script>
 export default {
   name: 'img',
+  props: {
+    data: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+  },
   data() {
     return {
-      data: ['http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg', 'http://pic.58pic.com/58pic/17/18/97/01U58PIC4Xr_1024.jpg',],
       scrollheight: 0,//滚动高度
       height: 0,//浏览器高度,
       imgs: []

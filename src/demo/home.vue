@@ -6,7 +6,8 @@
       </ks-hearder>
       <div class="content">
         <cell islink title="姓名" value="平哥"></cell>
-        <cell islink title="组件演示" value="图片懒加载" @click.native="gopage"></cell>
+        <cell islink title="组件演示" value="图片懒加载" @click.native="gopage('/img')"></cell>
+         <cell islink title="组件演示" value="下拉加载" @click.native="gopage('/pullup')"></cell>
       </div>
       <div class="layout" slot="drawer">
         <div>
@@ -57,8 +58,8 @@ export default {
     drawershow() {
       this.drawerShow = !this.drawerShow
     },
-    gopage(){
-       this.$router.push("/img")
+    gopage(url){
+       this.$router.push(url)
     }
   }
 }
