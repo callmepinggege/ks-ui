@@ -25,7 +25,6 @@ export const loadMore = {
 					scrollEl = document.body;
 					heightEl = el;
 				}
-
 				el.addEventListener('touchstart', () => {
 					height = heightEl.clientHeight;
 					if (scrollType == 2) {
@@ -44,7 +43,6 @@ export const loadMore = {
 					oldScrollTop = scrollEl.scrollTop;
 					moveEnd();
 				}, false)
-
 				const moveEnd = () => {
 					requestFram = requestAnimationFrame(() => {
 						if (scrollEl.scrollTop != oldScrollTop) {
@@ -59,9 +57,9 @@ export const loadMore = {
 				}
 
 				const loadMore = () => {
-					if (scrollEl.scrollTop + windowHeight >= height + setTop + paddingBottom + marginBottom - scrollReduce) {
+					//if (scrollEl.scrollTop + windowHeight >= height + setTop + paddingBottom + marginBottom - scrollReduce) {
 						binding.value();
-					}
+					//}
 				}
 			}
 		}

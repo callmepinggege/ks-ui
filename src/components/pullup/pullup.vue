@@ -1,12 +1,12 @@
 <template>
   <div class="pullup">
-    <ul v-load-more="loaderMore" v-if="shopListArr.length"  class="pullup-ul">
+    <ul v-load-more="loader" v-if="shopListArr.length" class="pullup-ul">
       <li v-for="item in shopListArr">
         1111
       </li>
     </ul>
     <aside class="return_top" @click="backTop" v-if="showBackStatus">
-        <icon type="fanhui" </icon>
+      <icon type="huidaodingbu1"> </icon>
     </aside>
     <footer class="loader_more" v-if="shopListArr.length<5">
       没有更多数据
@@ -25,11 +25,11 @@
 
 import { showBack, animate } from './mUtils'
 import { loadMore } from './mixin'
-
+import icon from '@/components/icon/index.js'
 export default {
   data() {
     return {
-      shopListArr: [1,1,1,1,1,1], // 店铺列表数据
+      shopListArr: [1, 1, 1, 1, 1, 1], // 店铺列表数据
       preventRepeatReuqest: false, //到达底部加载数据，防止重复加载
       showBackStatus: false, //显示返回顶部按钮
       text: "正在加载数据"
@@ -39,7 +39,7 @@ export default {
     this.initData();
   },
   components: {
-
+    icon
   },
   props: [],
   mixins: [loadMore],
@@ -61,7 +61,7 @@ export default {
       //     Toast.show("服务器繁忙")
       //   })
     },
-    async initData() {
+    initData() {
       //获取数据
       this.fetchData();
 
@@ -71,11 +71,11 @@ export default {
       });
     },
     //到达底部加载更多数据
-    async loaderMore() {
+    loader() {
       //防止重复请求
-      // if (this.preventRepeatReuqest) {
-      //   return
-      // }
+      if (this.preventRepeatReuqest) {
+        return
+      }
       //数据的定位加20位
       //this.offset += 20;
       // this.cursor = this.cursor + this.count
@@ -93,6 +93,12 @@ export default {
       //     }
       //   })
       this.shopListArr.push(1)
+      if (this.shopListArr.length > 30) {
+        this.showBackStatus = true
+        this.text = "没有更多的数据了...";
+        this.preventRepeatReuqest = true
+        return
+      }
       //this.shopListArr = [...this.shopListArr, ...res];
       //当获取数据小于20，说明没有更多数据，不需要再次请求数据
       this.preventRepeatReuqest = false;
@@ -112,9 +118,10 @@ export default {
 
 <style lang='scss' scoped>
 @import 'src/assets/styles/mixin';
-.pullup-ul{
+.pullup-ul {
   padding-top: 1rem;
 }
+
 .fee_distance {
   margin-top: 0.52rem;
   @include fj;
@@ -137,7 +144,7 @@ export default {
 
 
 .loader_more {
-  @include font(0.6rem, 3);
+  @include font(0.3rem, 3);
   text-align: center;
   color: #999;
 }
@@ -150,8 +157,8 @@ export default {
 
 .return_top {
   position: fixed;
-  bottom: 3rem;
-  right: 1rem;
+  bottom: 0.5rem;
+  right: 8%;
   .back_top_svg {
     @include wh(2rem, 2rem);
   }
