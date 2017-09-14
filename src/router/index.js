@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/demo/home'
 import Img from '@/demo/img'
 import Pullup from '@/demo/pullup'
+import Svg from '@/demo/svg'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/pullup',
       name: 'pullup',
       component: Pullup
+    },
+    {
+      path: '/svg',
+      name: 'svg',
+      component: Svg
     }
   ]
 })
